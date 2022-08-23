@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {
+  Button,
   SafeAreaView,
   ScrollView,
   StatusBar,
@@ -52,6 +53,12 @@ const App = () => {
             autoComplete={'password'}
             autoCapitalize={'none'}
           />
+          <Button
+            onPress={() => console.log('t')}
+            title="Login"
+            accessibilityLabel="Learn more about this purple button"
+            styles={styles.button}
+          />
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -65,6 +72,11 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 5,
     paddingHorizontal: 20,
+  },
+  button: {
+    padding: 10,
+    backgroundColor: 'black',
+    color: 'red',
   },
 });
 
