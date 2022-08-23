@@ -40,6 +40,7 @@ const App = () => {
             value={email}
             onChangeText={setemail}
             keyboardType={'email-address'}
+            textContentType={'username'}
             autoComplete={'email'}
             autoCapitalize={'none'}
           />
