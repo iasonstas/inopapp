@@ -31,10 +31,10 @@ const App = () => {
         <View
           style={{
             display: 'flex',
-            justifyContent: 'space-around',
+            justifyContent: 'center',
             alignItems: 'center',
             flex: 1,
-            height: 200,
+            height: 400,
           }}>
           <TextInput
             style={styles.inputField}
@@ -69,6 +69,7 @@ const styles = StyleSheet.create({
   inputField: {
     height: 50,
     width: 250,
+    marginTop: 15,
     borderWidth: 1,
     borderRadius: 5,
     paddingHorizontal: 20,
